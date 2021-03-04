@@ -6,7 +6,9 @@ runtime: python38
 instance_class: F2
 
 handlers:
-- url: /static
+- url: /static/style.css
+  static_files: static/style.css
+  upload: static/style.css
   static_dir: styles
 
 - url: /.*
