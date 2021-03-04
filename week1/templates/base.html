@@ -1,5 +1,4 @@
 <!-- This html template will start off all of your other html files/pages -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,20 +6,28 @@
     <title> {{ page_title }}</title>
   	<meta charset="utf-8"/>
     <!-- include the css from the file static/style.css -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
   </head>
   <body>
-
   <!-- this headline will appear on all pages. -->
   <header>
-    <div class="banner">
-      <h1> All about CODE </h1> 
-      <h3> A really great place. </h3>
+      <div class="container">
+          <img src="https://rvv.tv/wp-content/uploads/2020/09/code-university-berlin-logo-1.png" alt="Code University Logo" class:="logo" height="40px">
+          <nav>
+              <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/first-page">Projects</a></li>
+                  <li><a href="/second-page">Apply</a></li>
+              </ul>
+          </nav>
+      </div>
     </div>
   </header>
 
   <!-- This is the part which will be different on each page. 
        see first-page.html for an example of using it -->
+
   <main>
     {% block content%}
     {% endblock %}
@@ -29,3 +36,4 @@
     <h3> Made with love </h3>
   </footer>
   </body>
+</html>

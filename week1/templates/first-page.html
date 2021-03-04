@@ -1,8 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <p> This is the amazing stuff that will wind up on the first page I am making with a template. 
-    It looks simple - and it is, so far. Check out another page using the same base template <a href="/second-page">here</a>
-    </p>
+    <figure id="gallery">
+        <figcaption class="textcolor"><h2>CODE PROJECTS</h2></figcaption>
+        <figure> 
+            <img src="https://code.berlin/content/uploads/5b053488-400x400.jpg" alt="Between the Lines">
+            <figcaption class="fcaption">Between The Lines is a non-profit organization that helps teenagers in difficult life situations. In the last semester, a team of CODE students developed an app for Between the Lines, which provides teenagers in need with individual information and shows regional and national help institutions, contact and advice centers.</figcaption>
+        </figure>
 
+        <figure>
+            <img src="https://code.berlin/content/uploads/6cdfb466-400x400.png" alt="Sozo Robotics">
+            <figcaption class="fcaption">Sozo Robotics is an autonomous robot that can locate people who are buried under rubble after an earthquake. The project started when a team of 10 students wanted to work on a technology that would have an impact on human lives.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://code.berlin/content/uploads/4ed8a29c-400x400.jpg" alt="Social Record">
+            <figcaption class="fcaption">Social Record showcases how social media platforms are exploiting the lacking knowledge about data privacy and how users can protect themselves. The student project created an immersive exhibition where all active social media users could experience what public data social media providers expose about the visitors.</figcaption>
+        </figure>
+    </figure>
+    <p>Check out our mentees and proffesors <a href="/second-page">here</a></p>
 {% endblock %}
